@@ -1,0 +1,242 @@
+:root {
+    --mainColor: #252734;
+    --secondColor: #333646;
+    --acsenColor: #FF9100;
+  }
+  
+  body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Warna transparan */
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link.active {
+    color: var(--acsenColor) !important;
+    font-weight: 700;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ffce45;
+  }
+  
+  /* Hero */
+  #hero {
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+  }
+  
+  #hero h2 {
+    font-weight: 300;
+  }
+  
+  #hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  
+  .color-acsent {
+    color: var(--acsenColor);
+  }
+  
+  /* Section */
+  section h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  
+  #portofolio {
+    background: linear-gradient(135deg, #ffce45 0%, #f3e3d3 100%);
+    padding: 60px 0;
+    border-radius: 8px;
+  }
+  
+  #portofolio h2 {
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  /* Card */
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Button */
+  .btn-custom-1 {
+    background-color: var(--acsenColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  
+  .btn-custom-1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+  }
+  
+  .btn-primary {
+    background-color: var(--acsenColor);
+    border-color: var(--acsenColor);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e5b735;
+    transform: translateY(-3px);
+  }
+  
+  /* CV dan Sosial Icon */
+  .cv {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  .sosial-icon svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+  }
+  
+  /* Image */
+  .img {
+    top: 0;
+    right: 0;
+    width: 10px; /* Ukuran gambar, bisa disesuaikan */
+    border-radius: 50%; /* Membuat gambar bulat */
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .navbar {
+      background-color: #333;
+    }
+  
+    #portofolio {
+      padding: 40px 0;
+    }
+  
+    .card {
+      margin-bottom: 30px;
+    }
+  }
+  /*blog*/
+  #main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling untuk judul */
+  #main-content h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling untuk paragraf */
+  #main-content p {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Styling untuk gambar */
+  #main-content img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling untuk container My Skills dan My Favorite Foods */
+  .favorites-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .favorites-container div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Styling untuk tabel */
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  .table-container table, 
+  .table-container th, 
+  .table-container td {
+    border: 1px solid #ddd;
+  }
+  
+  .table-container th, 
+  .table-container td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Navbar styling */
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .favorites-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
